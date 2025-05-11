@@ -1,18 +1,135 @@
 /* pageHead section */
-body{
-    width:100vw;
-    height: 100vh;
+*{
+    margin: 0%;
+    padding: 0%;
 }
+body{
+    background-color: black;
+    color: white;
+      font-family: 'Ubuntu Sans', sans-serif;
+}
+ /*remove arrows form number input*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox  */
+/* input[type="number"] {
+  -moz-appearance: none;
+} */
+
 #header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+text-align: center;
 }
 
 #pageHead{
-    width: 50vw;
-    display: flex;
-    justify-content: space-evenly;
     align-items: center;
+    border-bottom: 1px solid green;
+    position: static;
+    top:1px;
 }
 
+
+/* display theme button */
+#pagetheme{
+    height: 35px;
+    width: 100px;
+    position: fixed;
+    right: 0;
+    top: 0px;
+    border-style:none ;
+    border-radius: 5.5px;
+}
+#pagetheme:hover{
+    background-color: black;
+    color: white;
+}
+
+/*container*/
+#container{
+    display: flex;
+    justify-content: space-around;
+    position: static;
+}
+
+    
+
+/*form section*/
+form{
+    width: fit-content;
+    margin: 3em auto;
+    padding: 1em;
+    background-color: gray;
+    border-radius: 5px;
+}
+
+#formInput h3 {
+    text-align: center;
+  }
+
+form input{
+   width:25em; 
+   height: 2em;
+}
+form .group{
+    margin-bottom: 15px;
+    margin-left: 2em;
+}
+/*Display*/
+#displayTable{
+    text-align: center;
+}
+#formInput #submit{
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+}
+
+/*Display table*/
+
+
+
+/*table */
+table{
+    border: 2.5px solid green;
+}
+
+table th{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 1em 0.5rem;
+    
+    
+}
+table th td{
+    margin: auto 1.0em;
+}
+
+
+#studentsTable tr th:nth-child(4){
+    display: block;
+    
+}
+
+#formInput , #displayTable{
+    height: 3em auto;
+    width: 55rem;
+    position: relative;
+    top: 3em;
+}
+
+table tr{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: "1500px";
+    padding: 1em 0.5rem;
+
+}
+table tr td{
+    margin: auto 1.0em;
+}

@@ -10,13 +10,63 @@
 </head>
 <body>
     <div id="header">
-        <span id="pageHead"><h1>Student Registration Form</h1></span> 
-        <p id="desc">Registration of new students onboarding</p>
-
+        <div id="pageHead"><h1>Student Registration Form</h1></div> 
+        <h3>Registration of new students onboarding</h3>
     </div>
-    <div id="container">
-        <div id="part1"></div>
-        <div id="part2"></div>
+    <div id="container"><!--This will hold the form & table-->
+        <div id="formInput">
+            <h3>Registration Form</h3><br>
+            <form action="">
+                <div class="group">
+                    <label for="studentname">Student Name:-</label><br>
+                    <input id ="studentname"  name="studentname" type="text" placeholder="Name"><br>    
+                </div>
+
+                <div class="group">
+                    <label for="age">Age :- </label><br>
+                    <input id="age" name="age"  type="number" placeholder="age" min="17" max="100"> <br>
+                </div>
+
+                <div class="group">
+                    <label for="email"> E-mail :-</label><br>
+                    <input id = "email" name="email" type="email" placeholder="abc@xyz.com"><br>
+                </div>
+
+                <div class="group">
+                    <label for="contact">Contact :-</label><br>
+                    <input id= "contact" name="contact" type="number" minlength ="10" maxlength="10" placeholder="123456790"><br>
+                </div>
+
+                <div class="group">
+                    <label for="studentId">Student ID :-</label><br>
+                    <input id= "studentId" name="StudentID" type="number" placeholder="ID" ><br>
+                </div>
+                <div class="group">
+                    <button id="submit" type="submit" >Add Student</button>
+                </div>                
+                
+            </form>
+        </div>
+        <div id="display">
+            <div id="displayTable">
+                <h3>Students Ledger</h3><br>    
+                <table id="studentsTable">
+                    <thead>
+                     <tr>
+                        <th>Student Name</th>
+                        <th>Age</th>
+                        <th>Student ID</th>
+                        <th>Email ID</th>
+                        <th>Contact No</th>    
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
     </div>
 </body>
 </html>
